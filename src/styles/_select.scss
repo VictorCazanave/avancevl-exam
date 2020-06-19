@@ -1,0 +1,65 @@
+/* 
+ * Override default style of bootstrap dropdown
+ * To avoid so many CSS changes, it may be better to use another component or build a custom one that fits the design
+ */
+
+// TODO: Implement mobile style
+.dropdown {
+  .dropdown {
+    // Override .btn.btn-primary styles
+    &-toggle,
+    &-toggle:active {
+      padding: 0.5rem 1rem;
+      border: 1px solid $color-white;
+      border-radius: 100rem;
+      background: $color-gray-dark !important;
+      box-shadow: none !important;
+
+      &:after {
+        margin-left: 0.5rem;
+        color: $color-blue;
+      }
+    }
+
+    &-menu {
+      top: 1rem !important; // TODO: Find less dirty way
+      border-radius: 1rem;
+      box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.2);
+      background-color: lighten($color-gray-dark, 5);
+    }
+
+    &-header {
+      color: $color-white;
+      font-weight: bold;
+    }
+
+    &-item {
+      color: $color-gray-light;
+      cursor: pointer;
+
+      &:focus,
+      &:hover {
+        background: linear-gradient(to right, $color-blue, $color-blue-light);
+        color: $color-white;
+      }
+    }
+  }
+
+  &.show {
+    .dropdown {
+      &-toggle {
+        border-color: $color-blue;
+        background-color: $color-gray-dark;
+        color: $color-blue;
+
+        &:focus {
+          box-shadow: none;
+        }
+
+        &:after {
+          color: $color-white;
+        }
+      }
+    }
+  }
+}
