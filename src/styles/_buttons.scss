@@ -1,0 +1,20 @@
+/* Override default style of bootstrap buttons */
+.btn {
+  padding: 0.5rem 2rem;
+  border-radius: 100rem;
+}
+
+.btn-primary {
+  border: none;
+  background: linear-gradient(to right, $color-blue, $color-blue-light);
+}
+
+.btn-outline-secondary {
+  border-color: $color-blue;
+  color: $color-blue-light;
+
+  &:hover {
+    border-color: $color-blue;
+    background-color: $color-blue;
+  }
+}
