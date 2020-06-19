@@ -34,9 +34,6 @@ function ExerciseFilters() {
 				</Dropdown.Toggle>
 
 				<Dropdown.Menu>
-					<Dropdown.Toggle>
-						X
-					</Dropdown.Toggle>
 					<Dropdown.Header>TOPICS</Dropdown.Header>
 					{topicOptions.map((option) => (
 						<Dropdown.Item key={option.value} as="div" eventKey={option.value}>
