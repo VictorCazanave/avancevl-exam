@@ -88,6 +88,46 @@
   }
 }
 
+.example {
+  &__question {
+    margin-bottom: 1rem;
+  }
+
+  &__result {
+    margin-top: 1rem;
+  }
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+
+  &__input {
+    width: 4rem;
+    padding: 0.7rem 1rem;
+    border: 1px solid $color-gray-light;
+    border-radius: 0.5rem;
+    background-color: $color-gray;
+    color: $color-blue-light;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+
+    &:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+
+    &:focus {
+      border-color: $color-blue;
+      outline: none;
+    }
+
+    &::placeholder {
+      color: rgba($color: $color-gray-light, $alpha: 0.4);
+    }
+  }
+}
+
 @media (min-width: $screen-large) {
   .app {
     display: flex;
