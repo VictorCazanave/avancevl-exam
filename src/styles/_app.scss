@@ -1,0 +1,58 @@
+/*
+ * All the styles of the application have been put here for quicker development
+ * A better solution (e.g. CSS modules, styled components...) should be used for real applications
+ */
+
+.app {
+  background-color: $color-gray-dark;
+  color: $color-white;
+}
+
+.sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: $color-black;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.exercise {
+  padding: 1rem;
+}
+
+.filters {
+  padding: 1rem 0;
+  display: flex;
+}
+
+.form {
+  padding: 1rem;
+  box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: $screen-large) {
+  .app {
+    display: flex;
+    height: 100%;
+  }
+
+  .sidebar {
+    flex: 0 0 20rem;
+    flex-direction: column;
+    font-size: 1rem;
+  }
+
+  .exercise {
+    flex: 1;
+    padding: 2rem 4rem;
+  }
+
+  .filters {
+    padding: 1rem 4rem;
+  }
+
+  .form {
+    padding: 2rem 4rem;
+  }
+}
