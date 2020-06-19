@@ -1,0 +1,17 @@
+@import "~react-circular-progressbar/dist/styles.css";
+
+/* Override default style of react-circular-progressbar */
+.CircularProgressbar {
+  .CircularProgressbar {
+    &-trail {
+      stroke: $color-gray;
+      stroke-width: 2;
+    }
+
+    &-path {
+      // Based on: https://github.com/kevinsqi/react-circular-progressbar/issues/31#issuecomment-338216925
+      stroke: url(#accuracy-gradient);
+      stroke-width: 2;
+    }
+  }
+}

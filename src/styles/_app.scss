@@ -15,6 +15,45 @@
   background-color: $color-black;
   font-size: 0.75rem;
   text-transform: uppercase;
+
+  &__section {
+    padding: 1.5rem;
+
+    &--accuracy {
+      flex: 0 0 50%;
+      max-width: 20rem;
+    }
+
+    &--counts {
+      flex: 0 0 50%;
+
+      // TODO: Use cleaner way
+      > div + div {
+        margin-top: 2rem;
+      }
+    }
+
+    &--date {
+      width: 100%;
+      padding-top: 1rem;
+      background-color: $color-gray-dark; // Why changing background color on mobile?
+      color: $color-gray-light;
+    }
+
+    &__title {
+      font-size: inherit;
+    }
+
+    &__value {
+      margin-right: 0.25rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    &__unit {
+      color: $color-gray-light;
+    }
+  }
 }
 
 .exercise {
@@ -41,6 +80,25 @@
     flex: 0 0 20rem;
     flex-direction: column;
     font-size: 1rem;
+
+    &__section {
+      padding: 2rem;
+
+      &--accuracy,
+      &--counts {
+        flex: 0;
+      }
+
+      &--date {
+        margin-top: auto;
+        background-color: inherit;
+      }
+
+      &__value {
+        margin-right: 0.5rem;
+        font-size: 2.5rem;
+      }
+    }
   }
 
   .exercise {
