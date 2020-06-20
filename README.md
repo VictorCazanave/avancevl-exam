@@ -1,6 +1,6 @@
 # AvanceVL Exam
 
-https://github.com/VictorCazanave/avancevl-exam
+https://victorcazanave.github.io/avancevl-exam/
 
 ## 🔧 Tools
 
@@ -10,8 +10,8 @@ https://github.com/VictorCazanave/avancevl-exam
 - react-circular-progressbar
 - date-fns
 
-
 ## 🏷️ Features
+
 - Radial Chart and Stats Pane
 - Simple Selector (desktop only)
 - Main Pane
