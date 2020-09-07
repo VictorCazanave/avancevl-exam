@@ -1,6 +1,8 @@
 # AvanceVL Exam
 
-https://victorcazanave.github.io/avancevl-exam/
+https://www.avancevl.com
+
+https://victorcazanave.github.io/avancevl-exam/ (unpublished)
 
 ## 🔧 Tools
 
